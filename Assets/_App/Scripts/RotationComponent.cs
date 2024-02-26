@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : ITransformBehaviour
+public class RotationComponent : ITransformBehaviour
 {
     private Transform _targetTransform;
 
@@ -10,7 +10,7 @@ public class Rotate : ITransformBehaviour
 
     private float _rotationSpeed;
 
-    public Rotate(Entity entity)
+    public RotationComponent(Entity entity)
     {
         _targetTransform = entity.transform;
         _rotationSpeed = entity.Settings.RotationSpeed;

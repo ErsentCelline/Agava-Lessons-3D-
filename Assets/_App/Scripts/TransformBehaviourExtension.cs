@@ -15,9 +15,9 @@ public static class TransformBehaviourExtension
     {
         return flag switch
         {
-            BehaviourType.Move => new Move(entity),
-            BehaviourType.Rotate => new Rotate(entity),
-            BehaviourType.Grow => new Grow(entity),
+            BehaviourType.Move => new MovementComponent(entity),
+            BehaviourType.Rotate => new RotationComponent(entity),
+            BehaviourType.Grow => new GrowthComponent(entity),
             _ => null,
         };
     }

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : ITransformBehaviour
+public class MovementComponent : ITransformBehaviour
 {
     private Transform _targetTransform;
     private float _movementSpeed;
 
-    public Move(Entity entity)
+    public MovementComponent(Entity entity)
     {
         _targetTransform = entity.transform;
         _movementSpeed = entity.Settings.MovementSpeed;

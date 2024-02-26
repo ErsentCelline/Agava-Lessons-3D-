@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grow : ITransformBehaviour
+public class GrowthComponent : ITransformBehaviour
 {
     private Transform _targetTransform;
 
@@ -10,7 +10,7 @@ public class Grow : ITransformBehaviour
 
     private float _growSpeed;
 
-    public Grow(Entity entity)
+    public GrowthComponent(Entity entity)
     {
         _targetTransform = entity.transform;
         _growSpeed = entity.Settings.GrowSpeed;
