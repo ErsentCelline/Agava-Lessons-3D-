@@ -236,7 +236,7 @@ MonoBehaviour:
   _behaviourType: 2
   _settings:
     _movementSpeed: 1
-    _rotationSpeed: 10
+    _rotationSpeed: 50
     _growSpeed: 0.25
 --- !u!1 &503178664
 GameObject:
